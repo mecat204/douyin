@@ -23,20 +23,4 @@ var arrCont = [
         "src":"有没有冰雪奇缘的感觉.mp4",
         "discription":"有没有冰雪奇缘的感觉"
     },
-    {
-        "src":"",
-        "discription":""
-    },
-    {
-        "src":"",
-        "discription":""
-    },
-    {
-        "src":"",
-        "discription":""
-    },
-    {
-        "src":"",
-        "discription":""
-    },
 ]
