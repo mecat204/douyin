@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>抖音人物榜单</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./js/data.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var oH3 = document.createElement("h3");
+			oH3.innerHTML = '<a style="position:absolute; top:10px; left:10px;" href="douyin/content/people/index.html" title="返回抖音主页收集">返回</a>'+'抖音人物榜单';
+
+			document.body.appendChild(oH3);
+			oH3.style.cssText = `
+				color: red;
+				text-align: center;
+			`;
+
+			var ul = document.createElement("ul");
+			for(var i = 0; i < data.length; i++){
+				ul.innerHTML += '<li><a href="https://v.douyin.com/'+ data[i].src +'" title="'+ data[i].title +'">'+ data[i].theme +'</a></li>';
+			}
+			document.body.appendChild(ul);
+
+			var bottom = document.createElement("a");
+			document.body.appendChild(bottom);
+			bottom.innerHTML = '<a href="#top" title="返回顶端">TOP</a>';
+			bottom.style.cssText = `
+				position:fixed;
+				bottom:10px;
+				right:10px;
+				font-weight:bolder;
+			`;
+
+		}
+	</script>
+</head>
+<body>
+</body>
+</html>
